@@ -1,0 +1,13 @@
+﻿@page
+@model ChristmasTE.Pages.TwelveDaysOfChristmasModel
+@{
+
+    <twelve-days-of-christmas day="4" items="a patridge in a pear tree,turtle doves,french hens,calling birds,gold rings,geese a-laying,swans a-swimming,maids a-milking,ladies dancing,lords a-leaping,pipers piping,drummers drumming"></twelve-days-of-christmas>
+
+    @for (int day = 1; day <= 12; day++)
+    {
+        <twelve-days-of-christmas day="@day" items="a patridge in a pear tree,turtle doves,french hens,calling birds,gold rings,geese a-laying,swans a-swimming,maids a-milking,ladies dancing,lords a-leaping,pipers piping,drummers drumming"></twelve-days-of-christmas>
+    }
+
+}
+
